@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #0f0f0f, #1a1a1a);
+    color: white;
+}
+
+nav {
+    background: #111;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid cyan;
+}
+
+nav h1 {
+    color: cyan;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    color: cyan;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background: #151515;
+    height: calc(100vh - 70px);
+    padding: 20px;
+    border-right: 2px solid cyan;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+    color: cyan;
+}
+
+.sidebar p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.main {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.gameArea {
+    width: 400px;
+    height: 500px;
+    background: black;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid cyan;
+    box-shadow: 0 0 20px cyan;
+}
+
+.player {
+    width: 50px;
+    height: 50px;
+    background: cyan;
+    position: absolute;
+    bottom: 10px;
+    left: 175px;
+    border-radius: 10px;
+}
+
+.enemy {
+    width: 40px;
+    height: 40px;
+    background: red;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bullet {
+    width: 5px;
+    height: 15px;
+    background: yellow;
+    position: absolute;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    background: cyan;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.controls button:hover {
+    background: white;
+}
+
+#restartBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: lime;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    border-top: 2px solid cyan;
+    margin-top: 20px;
+}
